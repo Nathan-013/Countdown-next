@@ -8,11 +8,11 @@ export default function Home() {
   
   return (
     <div className='flex flex-col gap-16 justify-center items-center h-screen'>
-      <h1 className="text-6xl font-bold text-center text-purple-700">
+      <h1 className="text-4xl lg:text-6xl font-bold text-center text-purple-700">
         Vou ver minha fuinha em:
       </h1>
 
-      <div className='flex justify-center gap-20'>
+      <div className='flex justify-center gap-10 w-30 flex-wrap'>
         <Contador title="Dias" number={day} />
 
         <Contador title="Horas" number={hour} />
