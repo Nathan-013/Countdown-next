@@ -2,15 +2,20 @@
 import Link from "next/link";
 import Contador from "./components/Contador";
 import useCountDown from "./hooks/useCountdown";
+import TypedText from "./components/TypedText";
+
+const nomes = ['minha fuinha', 'meu limaozinho 🍋', 'minha chata', 'minha vida', 'Aurora 🥱', 'a acompanhante 🤭'];
 
 export default function Home() {
-  const [day, hour, minute, second] = useCountDown('10/04/2024 07:00:00')
+  const [day, hour, minute, second] = useCountDown('10/04/2024 00:00:00')
   
   return (
     <div className='flex flex-col gap-16 justify-center items-center h-screen'>
-      <h1 className="text-4xl lg:text-6xl font-bold text-center text-purple-700">
-        Vou ver minha fuinha em:
-      </h1>
+      <div className="text-4xl lg:text-6xl font-bold text-center text-purple-700">
+        <h1 className="flex gap-4">
+          Vou ver <TypedText strings={nomes} /> em:
+        </h1>
+      </div>
 
       <div className='flex justify-center gap-10 w-30 flex-wrap'>
         <Contador title="Dias" number={day} />
