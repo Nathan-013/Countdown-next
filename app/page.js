@@ -11,8 +11,8 @@ export default function Home() {
   
   return (
     <div className='flex flex-col gap-16 justify-center items-center h-screen'>
-      <div className="text-4xl lg:text-6xl font-bold text-center text-purple-700">
-        <h1 className="flex gap-4">
+      <div className="text-2xl lg:text-6xl font-bold text-center text-purple-700">
+        <h1 className="flex gap-2 lg:gap-4">
           Vou ver <TypedText strings={nomes} /> em:
         </h1>
       </div>
