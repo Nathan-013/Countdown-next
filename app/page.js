@@ -28,9 +28,9 @@ const CountDown = ({ names, day, hour, minute, second }) => {
     </>)
   } else {
     return(
-      <>
-        XESDEDE
-      </>
+      <h1 className='text-3xl lg:text-6xl font-bold text-center text-purple-700'>
+        Carregando a saudade...
+      </h1>
     )
   }
 
@@ -38,7 +38,7 @@ const CountDown = ({ names, day, hour, minute, second }) => {
 }
 
 export default function Home() {
-  const [day, hour, minute, second] = useCountDown('11/25/2024 06:00:00')
+  const [day, hour, minute, second] = useCountDown('01/23/2025 01:00:00')
   const time = day+hour+minute+second
   console.log(time)
   return (
@@ -53,11 +53,9 @@ export default function Home() {
 
       <Link
         className='bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-4 rounded-3xl'
-        // href='https://www.youtube.com/watch?v=zwL3KHTtdJk'
         href="/Final"
-        target='_blank'
       >
-        Em manutenção!
+        Vamos Jogar? [manutenção]
       </Link>
     </div>
   );
