@@ -25,3 +25,162 @@ body {
     text-wrap: balance;
   }
 }
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+:root {
+  --branco-principal: #e6e6e6;
+  --cinza-secundario: #9c9c9c;
+  --cor-de-fundo: #131010;
+  --branco-terciario: #e6e6e6;
+}
+* {
+  @apply box-border m-0 p-0;
+}
+body {
+  @apply bg-[color:var(--cor-de-fundo)] text-[color:var(--branco-principal)] overflow-x-hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.escolha {
+  @apply grid place-items-center;
+}
+.escolha__texto {
+  @apply text-[50px] font-medium mt-[2em];
+  animation-name: slidein;
+  animation-duration: 2s;
+}
+@keyframes slidein {
+  from {
+    @apply mt-[50px];
+  }
+  to {
+    @apply mt-[100px];
+  }
+}
+.escolha__perfil {
+  @apply flex text-center justify-center;
+}
+.perfil__texto {
+  @apply text-xl font-normal text-[color:var(--cinza-secundario)] no-underline mt-[0.5em];
+}
+.perfil__foto {
+  @apply w-[150px] rounded-[10px];
+}
+li:hover .perfil__foto {
+  @apply border-[color:var(--branco-terciario)] border-[5px] border-solid;
+}
+li:hover .perfil__texto {
+  @apply text-[color:var(--branco-terciario)] cursor-pointer;
+}
+.escolha__lista {
+  @apply mx-[2em] my-[5em];
+  list-style: none;
+}
+.mais:hover {
+  @apply cursor-pointer;
+}
+.botao {
+  @apply text-xl font-normal text-[color:var(--cinza-secundario)] border-[color:var(--cinza-secundario)] px-[2em] py-[0.6em] border-2 border-solid hover:cursor-pointer hover:border-[color:var(--branco-terciario)] hover:text-[color:var(--branco-terciario)] hover:border-2 hover:border-solid;
+  background: none;
+}
+
+/* PAGINA PRINCIPAL____________________________________________ */
+.cabecario {
+  @apply fixed flex w-full;
+  background: linear-gradient(to bottom, black, rgba(20, 20, 20, 0.2));
+}
+
+.container__background {
+  @apply  bg-[url('./public/iza.png')] bg-cover sm:bg-auto h-[700px] flex items-center;
+}
+
+.container__logo {
+  @apply w-[100px];
+}
+.cabecario__item {
+  @apply font-medium transition-[500ms] mr-[4em] hover:text-[color:var(--cinza-secundario)] hover:cursor-pointer;
+}
+.botao__assistir {
+  @apply inline-flex items-center sm:w-[200px] bg-[color:var(--branco-principal)] no-underline text-[black] font-semibold transition-[300ms] mr-2 px-[1.5em] py-2 rounded-[3px] border-[none] hover:opacity-[60%] my-3 w-[210px];
+}
+.container__botao {
+  @apply lg:ml-[50px] lg:mr-0 lg:my-0 ;
+}
+.info {
+  @apply w-[210px] bg-[rgba(156,156,156,0.6)] font-semibold text-[color:var(--branco-principal)] hover:bg-[rgba(156,156,156,0.3)] hover:cursor-pointer hover:opacity-[100%] text-sm;
+  font-family: "Montserrat", sans-serif;
+}
+.container__titulo {
+  @apply w-[500px] ml-[50px] mr-0 mt-[200px] mb-0;
+}
+.container__texto {
+  @apply text-lg lg:text-xl font-medium ml-[20px] mr-0 mt-[0.5em] mb-[0.5em] lg:w-1/2;
+}
+.play {
+  @apply w-[30px] mr-2;
+}
+.cropped {
+  @apply  sm:w-[350px] sm:h-[200px] object-contain rounded-[15px] sm:hover:border sm:hover:border-zinc-800;
+}
+
+.container__video a {
+  @apply no-underline;
+}
+.desc {
+  @apply hidden transition-[200ms];
+}
+.container__lista {
+  @apply flex gap-3 sm:gap-4 mx-8;
+  list-style: none;
+}
+.container .container__video:hover .desc {
+  @apply flex text-[1.2em] text-[color:var(--branco-principal)] w-auto;
+}
+.container .container__video:hover .desc div {
+  @apply flex text-[1.2em];
+}
+.rodape {
+  @apply bg-[#101010] flex justify-center items-center mt-[30px];
+}
+.rodape__texto {
+  @apply text-[13px] font-light text-[color:var(--cinza-secundario)] mx-0 my-[2em];
+}
+#carrossel {
+  @apply absolute w-full h-[150px] overflow-y-hidden;
+}
+#container {
+  @apply w-auto transition-[0.6s] duration-[ease-in-out];
+}
+#container .carrossel_item {
+  @apply z-[2];
+}
+#btnleft {
+  @apply absolute w-[100px] h-[150px] cursor-pointer z-[3] opacity-0 border-[none] left-0 hover:opacity-100;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+#btnright {
+  @apply absolute cursor-pointer z-[3] h-[150px] w-[100px] opacity-0 border-[none] right-0 hover:opacity-100;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+}
+.botao__seta {
+  @apply w-[45%];
+}
+#container #limitador {
+  @apply opacity-0 z-[1] right-0;
+}
+/*FILME 5 -----------------------------------------------------------*/
+.cabecario__link {
+  @apply no-underline text-[color:var(--branco-terciario)] transition-[300ms] hover:text-[color:var(--cinza-secundario)];
+}
+.filme {
+  @apply flex justify-center items-center pt-[100px];
+}
+.filme5 {
+  @apply w-1/5 h-3/6;
+}
+.cabecario__filme {
+  @apply relative;
+}
