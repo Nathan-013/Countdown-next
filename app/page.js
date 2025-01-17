@@ -81,7 +81,7 @@ export default function Home() {
       </Link> */}
       <Link
         className='bg-zinc-950 hover:bg-black border-red-700 border text-red-700 font-bold text-xl tracking-wide px-6 py-3 rounded-xl'
-        href=""
+        href="/Final"
       >
         Netflix
       </Link>
