@@ -1,6 +1,6 @@
 'use client'
 
-import filme from "@/app/public/iza.mp4"
+import filme from "@/app/public/Iza.mp4"
 import Header from "../../components/Header";
 
 export default function MinhaAuroraPage() {
