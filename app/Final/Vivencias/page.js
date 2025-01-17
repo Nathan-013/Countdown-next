@@ -1,6 +1,6 @@
 'use client'
 
-import filme from "@/app/public/filme2.mp4"
+import filme from "../../public/filme2.mp4"
 import Header from "../../components/Header";
 
 export default function VivenciasPage() {
