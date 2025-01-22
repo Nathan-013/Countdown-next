@@ -42,7 +42,7 @@ export default function FinalPage() {
 
             <div className="container__botao">
               <a href="/Final/minhaAurora" className="botao__assistir">
-                <Image src={play} width={50} height={50} alt="play"  className="play" />
+                <Image src={play} width={50} height={50} alt="play" className="play" />
                 <span>
                   Assistir
                 </span>
@@ -82,7 +82,7 @@ export default function FinalPage() {
       <section id='minlis' className="Minha Lista">
         <p className="text-2xl font-semibold ml-5 my-5">Séries</p>
         <ul>
-          <li className="flex items-center justify-center text-base mt-6 text-red-700 font-black mb-12">
+          <li className="flex items-center justify-center text-base mt-6 text-red-700 font-base mb-12">
             <span className="text-xl">
               Aguarde! Em Produção...
             </span>
