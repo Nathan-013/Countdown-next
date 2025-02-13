@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 
 import logoNetflix from "../public/logo.png"
@@ -89,6 +90,13 @@ export default function FinalPage() {
           </li>
         </ul>
       </section>
+
+      <Link
+        className='bg-zinc-200 hover:bg-zinc-400 text-purple-900 font-bold text-xl tracking-wide px-6 py-2 rounded-xl flex justify-center'
+        href="/"
+      >
+        Voltar ao contador
+      </Link>
     </div>
   )
 }

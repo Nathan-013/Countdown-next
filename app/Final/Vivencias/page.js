@@ -10,9 +10,6 @@ export default function VivenciasPage() {
 
       <div >
         <section className="filme flex flex-col gap-8" >
-          <h5 className="text-3xl font-black text-red-700 border p-3 border-yellow-500">
-            ⚠️ Tô de olho, nem tenta! ⚠️
-          </h5>
           <video 
             src={filme} 
             controls="controls" 

@@ -27,15 +27,15 @@ const CountDown = ({ names, day, hour, minute, second }) => {
       </div>
     </>)
   } else if (day + hour + minute + second < 0) {
-    const [day, hour, minute, second] = useCountDown('07/02/2024 14:00:00')
+    const [day, hour, minute, second] = useCountDown('02/13/2025 08:00:00') // dia 12 é o certo
     return (
       <section className="flex flex-col gap-5">
        <div className="flex flex-col gap-3">
           <h1 className='text-3xl lg:text-5xl font-bold text-center text-purple-600'>
-            Agora que acabou
+            Nathan e Iza Caroline
           </h1>
           <h1 className='text-xl lg:text-3xl font-bold text-center text-purple-300'>
-            Outra contagem continua...
+          💜
           </h1>
        </div>
         <div className='flex justify-center gap-10 w-30 flex-wrap'>
