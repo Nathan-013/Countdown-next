@@ -184,3 +184,68 @@ li:hover .perfil__texto {
 .cabecario__filme {
   @apply relative;
 }
+
+/*Efeito de neve */
+.snowContainer {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;  
+}
+
+.snow, .snow:before, .neve:after {
+  position: fixed;
+  top: -500px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image:
+    radial-gradient(4px 4px at 100px 50px, #f00, transparent),
+    radial-gradient(6px 6px at 200px 150px, #ffffff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #ffffff 50%, transparent),
+    radial-gradient(4px 4px at 400px 350px, #0f0 50%, transparent),
+    radial-gradient(6px 6px at 500px 100px, #ffffff 50%, transparent),
+    radial-gradient(3px 3px at 50px 200px, #f00 50%, transparent),
+    radial-gradient(4px 4px at 150px 300px, #ffffff 50%, transparent),
+    radial-gradient(6px 6px at 250px 400px, #0f0 50%, transparent),
+    radial-gradient(3px 3px at 350px 500px, #ffffff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snowfall 10s linear infinite;
+  content: "";
+  pointer-events: none;
+}
+
+.snow:after {
+  margin-left: 250px;
+  opacity: 0.5;
+  filter: blur(20px);
+  animation-duration: 1s;
+  animation-direction: reverse;
+  pointer-events: none;
+}
+
+.snow:before {
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 70s;
+  animation-direction: reverse;
+  pointer-events: none;
+}
+
+@keyframes snowfall {
+  from {
+    transform: translateY(0px);
+    pointer-events: none;
+  
+  }
+
+  to {
+    transform: translateY(650px);
+    pointer-events: nones;
+  }
+}

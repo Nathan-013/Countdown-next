@@ -31,11 +31,11 @@ const CountDown = ({ names, day, hour, minute, second }) => {
     return (
       <section className="flex flex-col gap-5">
        <div className="flex flex-col gap-3">
-          <h1 className='text-3xl lg:text-5xl font-bold text-center text-purple-600'>
-            Nathan e Iza Caroline
+          <h1 className='text-5xl lg:text-5xl font-bold text-center text-red-600 text-stroke'>
+            IZA CAROLINE SILVA BARBOSA
           </h1>
-          <h1 className='text-xl lg:text-3xl font-bold text-center text-purple-300'>
-          💜
+          <h1 className='text-xl lg:text-3xl font-bold text-center text-stroke-sm'>
+            ❤️🎅 Você é meu melhor presente há: 🎁🎄
           </h1>
        </div>
         <div className='flex justify-center gap-10 w-30 flex-wrap'>
@@ -47,11 +47,15 @@ const CountDown = ({ names, day, hour, minute, second }) => {
 
           <Contador title="Segundos" number={-second} />
         </div>
+
+        <span className="text-center text-sm">
+          Em produção... Volte no ano novo para mais surpresas!
+        </span>
       </section>
     )
   } else {
     return(
-      <h1 className='text-3xl lg:text-6xl font-bold text-center text-purple-700'>
+      <h1 className='text-3xl lg:text-6xl font-bold text-center text-stroke'>
         Carregando a saudade...
       </h1>
     )

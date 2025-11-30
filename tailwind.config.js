@@ -13,5 +13,23 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke': {
+          '-webkit-text-stroke': '0.5px green',
+          'color': '#f00',
+        },
+        '.text-stroke-sm': {
+          '-webkit-text-stroke': '0.3px white',
+          'color': '#f00',
+        },
+        '.text-stroke-mc': {
+          '-webkit-text-stroke': '0.8px #166534',
+          'color': '#22c55e',
+        }
+      };
+      addUtilities(newUtilities);
+    }
+  ],
 };
