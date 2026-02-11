@@ -66,7 +66,7 @@ export default function FinalPage() {
       {/* fim de uma parte */}
       <section id='Assnov' className="Assistir novamente">
         <p className="text-2xl font-semibold ml-5 my-5">Minha Lista</p>
-        <ul className="container__lista">
+        <ul className="container__lista sm:flex-row flex-col sm:items-center">
           <li className="container__video">
             <a href="/Final/minhaAurora">
               <Image src={filme1} alt="Video" className="cropped"/>
