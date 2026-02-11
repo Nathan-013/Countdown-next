@@ -1,10 +1,10 @@
 const Contador = ({ title, number }) => {
   return (
-    <div className='flex flex-col rounded-lg bg-white w-36 h-36 items-center justify-between ring-2 ring-red-700 border-red-700'>
-      <p className='text-5xl font-bold mt-7 text-green-700'>
+    <div className='flex flex-col rounded-xl bg-[#F9F7FC] w-36 h-36 items-center justify-between  border-4 border-purple-300 shadow-sm'>
+      <p className='text-5xl font-bold mt-7 text-purple-800'>
         {number}
       </p>
-      <h3 className='text-xl text-green-500 text-stroke-mc font-semibold bg-slate-900 w-full py-1.5 rounded-b-lg text-center'>
+      <h3 className='text-lg text-purple-600 font-semibold bg-purple-100 w-full py-2   rounded-b-lg text-center'>
         {title}
       </h3>
     </div>

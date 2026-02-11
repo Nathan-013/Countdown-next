@@ -7,6 +7,7 @@ import { useState } from "react"
 import logoNetflix from "../public/logo.png"
 import filme2 from "../public/filme2.png"
 import filme1 from "../public/filme1.png"
+import filme3 from "../public/filme3.png"
 import play from "../public/play.png"
 import info from "../public/info.png"
 import Header from "../components/Header"
@@ -75,6 +76,12 @@ export default function FinalPage() {
           <li className="container__video">
             <a href="/Final/Vivencias">
               <Image src={filme2} alt="Video" className="cropped" />
+            </a>
+          </li>
+
+          <li className="container__video">
+            <a href="/Final/UmAno">
+              <Image src={filme3} alt="Video" className="cropped" />
             </a>
           </li>
         </ul>

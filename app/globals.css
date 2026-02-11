@@ -204,14 +204,14 @@ li:hover .perfil__texto {
   bottom: 0;
   right: 0;
   background-image:
-    radial-gradient(4px 4px at 100px 50px, #f00, transparent),
-    radial-gradient(6px 6px at 200px 150px, #ffffff, transparent),
+    radial-gradient(4px 4px at 100px 50px, rgb(138, 4, 248), transparent),
+    radial-gradient(6px 6px at 200px 150px, rgb(138, 4, 248), transparent),
     radial-gradient(3px 3px at 300px 250px, #ffffff 50%, transparent),
-    radial-gradient(4px 4px at 400px 350px, #0f0 50%, transparent),
-    radial-gradient(6px 6px at 500px 100px, #ffffff 50%, transparent),
-    radial-gradient(3px 3px at 50px 200px, #f00 50%, transparent),
-    radial-gradient(4px 4px at 150px 300px, #ffffff 50%, transparent),
-    radial-gradient(6px 6px at 250px 400px, #0f0 50%, transparent),
+    radial-gradient(4px 4px at 400px 350px, rgb(241, 78, 3) 50%, transparent),
+    radial-gradient(6px 6px at 500px 100px, rgb(138, 4, 248) 50%, transparent),
+    radial-gradient(3px 3px at 50px 200px, rgb(245, 107, 1) 50%, transparent),
+    radial-gradient(4px 4px at 150px 300px, #f66003 50%, transparent),
+    radial-gradient(6px 6px at 250px 400px, rgb(179, 0, 255) 50%, transparent),
     radial-gradient(3px 3px at 350px 500px, #ffffff 50%, transparent);
   background-size: 650px 650px;
   animation: snowfall 10s linear infinite;
